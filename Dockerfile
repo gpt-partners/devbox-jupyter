@@ -1,9 +1,10 @@
 # Use the latest Python image as the base
-FROM python:latest
+FROM python:3.11
 # Set the working directory inside the container
 WORKDIR /root/app
 # Install Jupyter Notebook
-RUN pip install jupyter
+RUN pip install --upgrade pip
+RUN pip install jupyter jupyter_ai openai langchain
 # Expose the default Jupyter Notebook port
 EXPOSE 8888
 # Start Jupyter Notebook when the container is run

@@ -3,8 +3,8 @@ FROM python:latest
 # Set the working directory inside the container
 WORKDIR /root/app
 # Copy environment variables
-COPY .env /root/app
-RUN cat /root/app/.env >> /root/.bashrc
+COPY ._env /root/app
+RUN cat /root/app/._env >> /root/.bashrc
 # Install Jupyter Notebook
 RUN pip install jupyter
 # Expose the default Jupyter Notebook port

@@ -4,7 +4,7 @@ FROM python:3.11
 WORKDIR /root/app
 # Install Jupyter Notebook
 RUN pip install --upgrade pip
-RUN pip install jupyter jupyter_ai voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain
+RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain
 # Expose the default Jupyter Notebook port
 EXPOSE 8888
 # Start Jupyter Notebook when the container is run

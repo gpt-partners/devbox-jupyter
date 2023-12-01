@@ -1,0 +1,11 @@
+{
+    "defaultConfig": {
+        "autoClosingBrackets": true,
+        "tabSize": 2,
+        "customStyles": {
+            "fontFamily": "\"Inconsolata Nerd Font\"",
+            "fontSize": 18,
+            "lineHeight": null
+        }
+    }
+}

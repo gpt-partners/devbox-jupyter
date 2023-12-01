@@ -1,0 +1,12 @@
+{
+    "theme": "Darcula",
+    "theme-scrollbars": true,
+    "overrides": {
+        "code-font-family": "\"Inconsolata Nerd Font\"",
+        "code-font-size": "18",
+        "content-font-family": "\"Inconsolata Nerd Font\"",
+        "content-font-size1": "18",
+        "ui-font-family": null,
+        "ui-font-size1": "18"
+    }
+}

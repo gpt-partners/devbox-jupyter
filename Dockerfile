@@ -20,7 +20,7 @@ RUN ./install-nvim.sh
 
 # Install Jupyter Notebook
 RUN pip install --upgrade pip
-RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain jupyter-lsp 'python-lsp-server[all]'
+RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila jedi flake8 yapf ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain python-dotenv jupyterlab-lsp jupyter-lsp 'python-lsp-server[all]'
 
 # Copy dotfiles
 COPY gitconfig /root/.gitconfig

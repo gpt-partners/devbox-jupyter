@@ -1,0 +1,26 @@
+{
+    // Code Completion
+    // @jupyterlab/completer-extension:manager
+    // Code Completion settings.
+    // ***************************************
+
+    // Enable autocompletion.
+    // Autocompletion setting.
+    "autoCompletion": true,
+
+    // Completion providers rank setting.
+    // Providers with higher rank will be shown before the ones with lower rank, providers with negative rank are disabled.
+    "availableProviders": {
+        "lsp": 570,
+        "CompletionProvider:context": 500,
+        "CompletionProvider:kernel": 550
+    },
+
+    // Default timeout for a provider.
+    // If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond
+    "providerTimeout": 1000,
+
+    // Show the documentation panel.
+    // Documentation panel setting.
+    "showDocumentationPanel": true
+}

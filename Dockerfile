@@ -16,7 +16,7 @@ COPY zshrc /root/.zshrc
 
 # Install Jupyter Notebook
 RUN pip install --upgrade pip
-RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain
+RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain 'python-lsp-server[all]'
 
 # Expose the default Jupyter Notebook port
 EXPOSE 8888

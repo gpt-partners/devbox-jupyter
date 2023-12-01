@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     tmux \
     zsh \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
 # Install nvim
@@ -19,12 +20,13 @@ RUN ./install-nvim.sh
 
 # Install Jupyter Notebook
 RUN pip install --upgrade pip
-RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain 'python-lsp-server[all]'
+RUN pip install jupyter jupyter_ai jupyterlab-code-formatter black isort voila ipywidgets jupyterlab_vim jupyterlab_sql theme-darcula openai langchain jupyter-lsp 'python-lsp-server[all]'
 
 # Copy dotfiles
 COPY gitconfig /root/.gitconfig
 COPY tmux.conf /root/.tmux.conf
 COPY zshrc /root/.zshrc
+COPY profile /root/.profile
 
 # Expose the default Jupyter Notebook port
 EXPOSE 8888

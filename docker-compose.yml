@@ -9,3 +9,4 @@ services:
       - 8866:8866
     volumes:
       - ./data:/root/app
+      - ./jupyter-config:/root/.jupyter

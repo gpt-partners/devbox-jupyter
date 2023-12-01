@@ -49,7 +49,7 @@
                     "pycodestyle"
                 ],
                 "pylsp.plugins.flake8.config": null,
-                "pylsp.plugins.flake8.enabled": true,
+                "pylsp.plugins.flake8.enabled": false,
                 "pylsp.plugins.flake8.exclude": [],
                 "pylsp.plugins.flake8.executable": "flake8",
                 "pylsp.plugins.flake8.filename": null,
